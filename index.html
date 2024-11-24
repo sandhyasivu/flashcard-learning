@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcard Learning App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Flashcard Learning App</h1>
+        <div class="flashcard" onclick="flipCard()">
+            <div class="card-inner" id="card">
+                <div class="card-front" id="card-front">
+                    <h2>Question</h2>
+                    <p id="question-text">What is HTML?</p>
+                </div>
+                <div class="card-back" id="card-back">
+                    <h2>Answer</h2>
+                    <p id="answer-text">HyperText Markup Language</p>
+                </div>
+            </div>
+        </div>
+        <div class="controls">
+            <button onclick="prevCard()">Previous</button>
+            <button onclick="nextCard()">Next</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
